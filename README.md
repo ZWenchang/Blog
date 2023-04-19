@@ -1,2 +1,2 @@
-# GITHUB
+# Blog
 BLOG
