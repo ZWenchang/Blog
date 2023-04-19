@@ -10,6 +10,12 @@ const routes:Array<RouteRecordRaw> = [
         path:"/blog",
         component:()=>import('../components/blog/index.vue')
     },
+    {
+        path:"/ZWC",
+        name:"ZWC",
+        component:()=>import('../components/home/body/ZWC.vue')
+    },
+    
 ]
 
 const router = createRouter({

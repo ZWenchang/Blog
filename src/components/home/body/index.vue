@@ -1,9 +1,12 @@
 <template>
     <div id="bodyall">
-        <div class="body1">
+        <div class="body1" >
+            <!-- v-intersection-observer="onIntersectionObserver" -->
             <img src="src\assets\pexels-cottonbro-studio-6580014.jpg" style="width: 360px;height: 420px;" class="image" />
             <div class="111" style="padding: 14px">
-                <span>Yummy hamburger</span>
+                <router-link to="ZWC">ZHANGWENCHAGN </router-link>
+                <router-view></router-view>
+                <!-- <span>Yummy hamburger</span> -->
                 <div class="bottom">
                     <time class="time">{{ currentDate }}</time>
                     <br>
@@ -24,7 +27,8 @@
             </div>
         </div>
         <div class="body1">
-            <img src="src\assets\pexels-instantanés-de-chrissie-15836012.jpg" style="width: 360px;height: 380px;" class="image" />
+            <img src="src\assets\pexels-instantanés-de-chrissie-15836012.jpg" style="width: 360px;height: 380px;"
+                class="image" />
             <div style="padding: 14px">
                 <span>Yummy hamburger</span>
                 <div class="bottom">
@@ -46,7 +50,7 @@
             </div>
         </div>
         <div class="body1">
-            <img src="src\assets\pexels-sebastian-palomino-1955134.jpg"  style="width: 360px;height: 400px;" class="image" />
+            <img src="src\assets\pexels-sebastian-palomino-1955134.jpg" style="width: 360px;height: 400px;" class="image" />
             <div style="padding: 14px">
                 <span>Yummy hamburger</span>
                 <div class="bottom">
@@ -104,7 +108,21 @@
     </div>
 </template>
 <script setup lang = 'ts'>
-import { ref, reactive } from 'vue'
+import { ref } from 'vue'
+// import { vIntersectionObserver } from '@vueuse/components'
+// const root = ref(null)
+
+// const isVisible = ref(false)
+
+// function onIntersectionObserver([{ isIntersecting }]) {
+//   isVisible.value = isIntersecting
+// }
+
+
+
+
+
+
 const currentDate = ref(new Date())
 </script>
 <style scoped lang="less">
@@ -130,7 +148,7 @@ const currentDate = ref(new Date())
     .body1:hover {
         transform: translateY(-3px);
         /* 背景 */
-        box-shadow: 0 20px 80px rgba(48, 49, 51, 0.15); 
+        box-shadow: 0 20px 80px rgba(48, 49, 51, 0.15);
     }
 }
 
@@ -156,6 +174,12 @@ const currentDate = ref(new Date())
     width: 100%;
     display: block;
     border-radius: 20px 20px 0 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
 }
 </style>
 
