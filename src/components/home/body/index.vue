@@ -1,8 +1,7 @@
 <template>
     <div id="bodyall">
-        <div class="body1" >
-            <!-- v-intersection-observer="onIntersectionObserver" -->
-            <img src="src\assets\pexels-cottonbro-studio-6580014.jpg" style="width: 360px;height: 420px;" class="image" />
+        <div class="body1">
+            <img src="src/assets/1111.jpg" style="width: 360px;height: 420px;" class="target" />
             <div class="111" style="padding: 14px">
                 <router-link to="ZWC">ZHANGWENCHAGN </router-link>
                 <router-view></router-view>
@@ -16,7 +15,7 @@
 
         </div>
         <div class="body1">
-            <img src="src\assets\pexels-ricky-esquivel-16204656.jpg" style="width: 360px;height: 360px;" class="image" />
+            <img src="src/assets/2.jpg" style="width: 360px;height: 280px;" class="target" />
             <div style="padding: 14px">
                 <span>Yummy hamburger</span>
                 <div class="bottom">
@@ -27,8 +26,8 @@
             </div>
         </div>
         <div class="body1">
-            <img src="src\assets\pexels-instantanés-de-chrissie-15836012.jpg" style="width: 360px;height: 380px;"
-                class="image" />
+            <img src="src/assets/3.jpg" style="width: 360px;height: 380px;"
+                class="target" />
             <div style="padding: 14px">
                 <span>Yummy hamburger</span>
                 <div class="bottom">
@@ -39,7 +38,7 @@
             </div>
         </div>
         <div class="body1">
-            <img src="src\assets\pexels-monstera-6373305.jpg" style="width: 360px;height: 320px;" class="image" />
+            <img src="src/assets/4.jpg" style="width: 360px;height: 480px;" class="target" />
             <div style="padding: 14px">
                 <span>Yummy hamburger</span>
                 <div class="bottom">
@@ -50,7 +49,7 @@
             </div>
         </div>
         <div class="body1">
-            <img src="src\assets\pexels-sebastian-palomino-1955134.jpg" style="width: 360px;height: 400px;" class="image" />
+            <img src="src/assets/5.jpg" style="width: 360px;height: 400px;" class="target" />
             <div style="padding: 14px">
                 <span>Yummy hamburger</span>
                 <div class="bottom">
@@ -61,7 +60,7 @@
             </div>
         </div>
         <div class="body1">
-            <img src="src\assets\pexels-irina-iriser-1122626.jpg" style="width: 360px;height: 360px;" class="image" />
+            <img src="src/assets/6.jpg" style="width: 360px;height: 300px;" class="target" />
             <div style="padding: 14px">
                 <span>Yummy hamburger</span>
                 <div class="bottom">
@@ -72,7 +71,7 @@
             </div>
         </div>
         <div class="body1">
-            <img src="src\assets\pexels-tomáš-malík-3408353.jpg" style="width: 360px;height: 468px;" class="image" />
+            <img src="src/assets/7.jpg" style="width: 360px;height: 468px;" class="target" />
             <div style="padding: 14px">
                 <span>Yummy hamburger</span>
                 <div class="bottom">
@@ -83,7 +82,7 @@
             </div>
         </div>
         <div class="body1">
-            <img src="src\assets\pexels-tuğba-14588331.jpg" style="width: 360px;height: 451px;" class="image" />
+            <img src="src/assets/8.jpg" style="width: 360px;height: 451px;" class="target" />
             <div style="padding: 14px">
                 <span>Yummy hamburger</span>
                 <div class="bottom">
@@ -94,7 +93,7 @@
             </div>
         </div>
         <div class="body1">
-            <img src="src\assets\pexels-angela-roma-7319277.jpg" style="width: 360px;height: 350px;" class="image" />
+            <img src="src/assets/9.jpg" style="width: 360px;height: 480px;" class="target" />
             <div style="padding: 14px">
                 <span>Yummy hamburger</span>
                 <div class="bottom">
@@ -109,19 +108,18 @@
 </template>
 <script setup lang = 'ts'>
 import { ref } from 'vue'
-// import { vIntersectionObserver } from '@vueuse/components'
-// const root = ref(null)
-
-// const isVisible = ref(false)
-
-// function onIntersectionObserver([{ isIntersecting }]) {
-//   isVisible.value = isIntersecting
-// }
+import { useIntersectionObserver } from '@vueuse/core'
 
 
+const target = ref(null)
+const targetIsVisible = ref(false)
 
-
-
+const { stop } = useIntersectionObserver(
+    target,
+    ([{ isIntersecting }], observerElement) => {
+        targetIsVisible.value = isIntersecting
+    },
+)
 
 const currentDate = ref(new Date())
 </script>
@@ -170,7 +168,7 @@ const currentDate = ref(new Date())
     min-height: auto;
 }
 
-.image {
+.target {
     width: 100%;
     display: block;
     border-radius: 20px 20px 0 0;
