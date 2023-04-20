@@ -137,14 +137,14 @@ const currentDate = ref(new Date())
     padding-right: 80px;
 
     .body1 {
+        transition: transform 0.4s ease-in-out;
         border-radius: 10rpx;
-        box-shadow: 5px 5px 5px #cdcfcf;
         border-radius: 20px;
         margin-top: 20px
     }
 
     .body1:hover {
-        transform: translateY(-3px);
+        transform: scale(1.07);
         /* 背景 */
         box-shadow: 0 20px 80px rgba(48, 49, 51, 0.15);
     }
