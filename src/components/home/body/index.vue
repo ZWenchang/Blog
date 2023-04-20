@@ -1,19 +1,21 @@
 <template>
     <div id="bodyall">
         <div class="body1">
-            <img src="src/assets/1111.jpg" style="width: 360px;height: 420px;" class="target" />
-            <div class="111" style="padding: 14px">
-                <router-link to="ZWC">ZHANGWENCHAGN </router-link>
-                <router-view></router-view>
-                <!-- <span>Yummy hamburger</span> -->
-                <div class="bottom">
-                    <time class="time">{{ currentDate }}</time>
-                    <br>
-                    <br>
+            <a href="">
+                <img src="src/assets/1111.jpg" style="width: 360px;height: 420px;" class="target" />
+                <div class="111" style="padding: 14px">
+                    <router-link to="ZWC">ZHANGWENCHAGN </router-link>
+                    <router-view></router-view>
+                    <!-- <span>Yummy hamburger</span> -->
+                    <div class="bottom">
+                        <time class="time">{{ currentDate }}</time>
+                        <br>
+                        <br>
+                    </div>
                 </div>
-            </div>
-
+            </a>
         </div>
+        <a href="">
         <div class="body1">
             <img src="src/assets/2.jpg" style="width: 360px;height: 280px;" class="target" />
             <div style="padding: 14px">
@@ -25,9 +27,10 @@
                 </div>
             </div>
         </div>
+    </a>
+    <a href="">
         <div class="body1">
-            <img src="src/assets/3.jpg" style="width: 360px;height: 380px;"
-                class="target" />
+            <img src="src/assets/3.jpg" style="width: 360px;height: 380px;" class="target" />
             <div style="padding: 14px">
                 <span>Yummy hamburger</span>
                 <div class="bottom">
@@ -37,6 +40,8 @@
                 </div>
             </div>
         </div>
+    </a>
+    <a href="">
         <div class="body1">
             <img src="src/assets/4.jpg" style="width: 360px;height: 480px;" class="target" />
             <div style="padding: 14px">
@@ -48,6 +53,8 @@
                 </div>
             </div>
         </div>
+    </a>
+    <a href="">
         <div class="body1">
             <img src="src/assets/5.jpg" style="width: 360px;height: 400px;" class="target" />
             <div style="padding: 14px">
@@ -59,6 +66,8 @@
                 </div>
             </div>
         </div>
+    </a>
+    <a href="">
         <div class="body1">
             <img src="src/assets/6.jpg" style="width: 360px;height: 300px;" class="target" />
             <div style="padding: 14px">
@@ -70,6 +79,8 @@
                 </div>
             </div>
         </div>
+    </a>
+    <a href="">
         <div class="body1">
             <img src="src/assets/7.jpg" style="width: 360px;height: 468px;" class="target" />
             <div style="padding: 14px">
@@ -81,6 +92,8 @@
                 </div>
             </div>
         </div>
+    </a>
+    <a href="">
         <div class="body1">
             <img src="src/assets/8.jpg" style="width: 360px;height: 451px;" class="target" />
             <div style="padding: 14px">
@@ -92,6 +105,8 @@
                 </div>
             </div>
         </div>
+    </a>
+    <a href="">
         <div class="body1">
             <img src="src/assets/9.jpg" style="width: 360px;height: 480px;" class="target" />
             <div style="padding: 14px">
@@ -103,6 +118,7 @@
                 </div>
             </div>
         </div>
+    </a>    
 
     </div>
 </template>
