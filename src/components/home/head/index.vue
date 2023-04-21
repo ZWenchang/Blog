@@ -26,9 +26,6 @@ a {
     color: aliceblue;
 }
 
-// ul {
-//     height: 50px;
-// }
 
 #header {
     background-color: rgb(225, 89, 15);
@@ -39,30 +36,6 @@ a {
 .logo {
     height: 50px;
 }
-
-// #header .right {
-//     display: flex;
-//     // margin-left: 1200px;
-//     float: right;
-
-// }
-
-// #header .menu {
-//     display: flex;
-//     /* display: flex：弹性盒子，很适合多个元素按一行或者一列排开 */
-//     height: 100%;
-//     /* 设置和导航栏 header 相同的高度 */
-//     line-height: 50px;
-//     /* 设置行高，注意不要使用 inherit（继承），因为 menu 的父标签不是 header，而是 ul，我们并没有设置 ul 的行高，无法继承 */
-//     /* 最大宽度 */
-//     padding: 0 20px;
-//     justify-content: space-between;
-// }
-
-// #header .menu li {
-//     height: 100%;
-//     /* 设置高度，让每一个标签的高度也等于 header 高度 */
-// }
 
 #header li:hover {
     background: rgb(241, 150, 97);
@@ -86,21 +59,10 @@ img {
     position:absolute;
 }
 
-// label #home {
-//     display: none;
-// }
-
-// label #blog {
-//     display: none;
-// }
 #mychackbox {
     display: none;
 }
 
-// #mychackbox:checked~.hide {
-//     display: block;
-//     width: 100px;
-// }
 
 #mychackbox:checked~.left {
     position: fixed;
